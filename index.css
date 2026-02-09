@@ -98,3 +98,46 @@ body{
   50%{transform:translate(-50%, -120%) translateY(-10px);}
   100%{transform:translate(-50%, -120%) translateY(0);}
 }
+
+/* 📱 Mobile optimalisatie */
+@media (max-width: 768px) {
+
+  /* ❤️ Hart kleiner */
+  #heart, .heart, .hearts {
+    transform: scale(0.6) !important;
+  }
+
+  /* 💌 Cards groter */
+  .card{
+    padding: 22px 26px;
+    font-size: 22px;
+    border-radius: 18px;
+    box-shadow: 0 0 35px rgba(255,0,120,0.7);
+  }
+
+  .card.show{
+    transform:translate(-50%, -130%) scale(1.15);
+  }
+
+  /* 📸 Foto groter */
+  #finalPhoto img{
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 18px;
+  }
+
+  /* 💬 Tekst iets groter */
+  #finalText{
+    font-size: 24px;
+    bottom: 6%;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* 👆 Hint tekst */
+  #hint{
+    font-size: 18px;
+    bottom: 20px;
+  }
+}
+
